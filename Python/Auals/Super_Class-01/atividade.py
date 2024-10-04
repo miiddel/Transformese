@@ -44,7 +44,7 @@ class Coelho(Animal):
     def Coelho_sexo (self):
         return {self.sexo}
     
-class Cachorro(Animal):
+class Cachorro(Animal, Gato):
     def __init__(self,nome,idade,racao,info,dormir,passear):
         self.nome = nome
         self.idade = idade
@@ -61,5 +61,8 @@ class Cachorro(Animal):
         return {self.racao}
  
 Animal1=Gato("Pantera",8,"André","linda",True,False)
-
 print(Animal1.nome)
+Animal2=Coelho("Dentinho",2,"Irineu","fofo",True,False)
+print(Animal2.idade)
+Animal3=Cachorro("Bobby",5,"Good","divertido",False,True)
+print(Animal3.racao)
